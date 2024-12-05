@@ -1,0 +1,352 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 20px;
+}
+
+/* Section Styling */
+.newbg {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.left-content {
+    flex: 1;
+    max-width: 40%;
+    text-align: left;
+}
+
+.left-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+.left-content button {
+    padding: 10px 20px;
+    
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.left-content button:hover {
+    background-color: #0056b3;
+}
+
+.newpara {
+    flex: 2;
+    max-width: 55%;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .newbg {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .left-content,
+    .newpara {
+        max-width: 100%;
+    }
+
+    
+    .newpara {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    
+
+    .newpara {
+        font-size: 0.8rem;
+    }
+
+    .left-content button {
+        
+        padding: 8px 16px;
+    }
+}
+footer {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 20px;
+    padding: 10px 0;
+    background-color: #f4f4f9;
+    border-top: 1px solid #ddd;
+    position: relative; /* Can be set to 'fixed' for sticky footer */
+    bottom: 0;
+    width: 100%;
+}
+
+
+.main-container {
+    position: relative;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+.image-wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(80%); /* Adjust brightness as needed */
+}
+
+.text-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.text-wrapper h2 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.arrow-container {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.arrow-container .arrow {
+    cursor: pointer;
+    font-size: 30px;
+    color: #fff;
+    opacity: 0.7;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.arrow-container .arrow:hover {
+    opacity: 1;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    color: #888;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .text-wrapper h2 {
+        font-size: 24px;
+    }
+
+    .arrow-container .arrow {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .text-wrapper h2 {
+        font-size: 18px;
+    }
+
+    .arrow-container .arrow {
+        font-size: 16px;
+    }
+}
+.newparagraph{
+    font-size:30px;
+    margin:10px;
+    padding: 15px;
+}
+.contact-section {
+    background-image:url('../images/slide/Spacio\ TechTonics\ Consultancy\ V21.png');
+    height:100%;
+    width:140vh;
+    background-size:'cover';
+    margin-left:15vh;
+    padding:30px;
+    color:white;
+    
+    
+}
+
+.contact-section h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.contact-section p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.email-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.email-form .form-input {
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 250px;
+}
+
+.email-form .form-button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links h4 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.social-links a {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #555;
+}
+.flexbox{
+    display: flex;
+    justify-content: center;
+}
+
+.logomsg{
+    font-size:20px;
+    color: white;
+
+}
+h5{
+    color:black;
+    padding:10px;
+    margin-top:50px;
+}
+h1{
+    color: black;
+    font-size: 50px;
+}
+.unlist{
+    color:black;
+    font-size:60px;
+    margin:10px;
+    padding:10px;
+}
+
+.listpara{
+    color:black;
+    font-size:60px;
+    margin:10px;
+    padding:10px;
+
+}
+.headerheading{
+    font-size: 60px;
+    padding:10px;
+    margin: 5px;
+}
+.newbutton{
+    font-size:20px;
+    padding:5px;
+    margin:3px;
+    color:white;
+}
+.newheaders{
+    font-size:80px;
+    padding:5px;
+    margin:3px;
+}
+.newimgicon{
+    height:65px;
+    width:70px;
+    background-size: cover;
+    margin-right:50px;
+    margin:3px;
+    padding:5px;
+}
+.newmap{
+    height:80vh;
+    width:100vh;
+    background-size:cover;
+}
+.latestimg{
+    height: 70vh;
+    width:80vh;
+    background-size: cover;
+    margin:10px;
+    padding:10px;
+    
+}
+.carousalnew{
+    
+    background-size: cover;
+}
+.lasthead{
+    color:white;
+    font-size:50px;
+    padding:40px;
+    margin:10px;
+}
+.lastfoot{
+    color:white;
+    font-size:40px;
+    padding:10px;
+    margin:8px;
+}
+.socialiconnew{
+    height: 100px;
+    width:150px;
+
+}
